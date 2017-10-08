@@ -1,0 +1,126 @@
+{% include 'header.html' %}
+
+<div class="row">
+        <div class="col-sm-12 col-md-10 col-md-offset-1">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th class="text-center">Price</th>
+                        <th class="text-center">Total</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-sm-8 col-md-6">
+                        <div class="media">
+                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="{{ url_for('static', filename='vistara/thumb.jpg') }}" style="width: 72px; height: 72px;"> </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">T-Shirt</h4>
+                                <h5 class="media-heading">Chicago Bulls</h5>
+                                <span>Status: </span><span class="text-success"><strong>In Stock</strong></span>
+                            </div>
+                        </div></td>
+                        <td class="col-sm-1 col-md-1" style="text-align: center">
+                        <input type="email" class="form-control" id="exampleInputEmail1" value="1">
+                        </td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong>RS.500</strong></td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong>Rs.500</strong></td>
+                        <td class="col-sm-1 col-md-1">
+                        <button type="button" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove"></span> Remove
+                        </button></td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td><h5>Subtotal<br>Estimated shipping</h5><br><br><h3>Total</h3></td>
+                        <td class="text-right"><h5><strong>Rs.500<br></strong></h5><h5>Rs.70(incl. of CGST & SGST)</h5><br> <h4>Rs.570</h4>></td>
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+
+                        <td>
+                        <!--<button type="button" class="btn btn-default">
+                            <a href="./shop.html">
+                            <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
+                        </a>
+                        </button></td>
+                        <td>
+                        <button type="button" class="btn btn-success">
+                            <a href="./payment.htm">
+                            Checkout <span class="glyphicon glyphicon-play"></span>
+                        </a>
+                        </button></td>-->
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+<link href="./css/bootstrap.min.css?family=Oleo+Script:400,700" rel="stylesheet">
+<link href="./css/bootstrap.min.css?family=Teko:400,700" rel="stylesheet">
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+<section id="contact">
+            <div class="section-content">
+                <h1 class="section-header"> <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> We need some details for shipping</span></h1>
+            </div>
+            <div class="contact-section">
+            <div class="container">
+                <form>
+                    <div class="col-md-6 form-line">
+                        <div class="form-group">
+                            <label for="exampleInputUsername">Your name</label>
+                            <input type="text" class="form-control" id="" placeholder=" Enter Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail">Email Address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail" placeholder=" Enter Email id">
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">Mobile No.</label>
+                            <input type="tel" class="form-control" id="telephone" placeholder=" Enter 10-digit mobile no.">
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">PNR No.</label>
+                            <input type="tel" class="form-control" id="telephone" placeholder=" Enter 6-digit PNR no.">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for ="description">Any Comment</label>
+                            <textarea  class="form-control" id="description" placeholder="Enter Your Message"></textarea>
+                        </div>
+                        <div>
+                        </div>
+                        <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+
+                        <td>
+                        <button type="button" class="btn btn-default">
+                            <a href="{{url_for('shop')}}">
+                            <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
+                        </a>
+                        </button></td>
+                        <td>
+                        <button type="button" class="btn btn-success">
+                            <a href="{{url_for('payment')}}">
+                            Checkout <span class="glyphicon glyphicon-play"></span>
+                        </a>
+                        </button></td>
+                    </tr>
+
+                    </div>
+                </form>
+            </div>
+        </section>

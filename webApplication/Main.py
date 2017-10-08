@@ -71,6 +71,10 @@ def register():
 			return redirect('/profile')
 
 
+@app.route('/next')
+def next():
+	return render_template('next.html')
+
 @app.route('/profile', methods=['GET'])
 def profile():
 	if not session.get('logged'):
@@ -92,14 +96,13 @@ def shop():
 def list():
 	return render_template('list.html')
 
-@app.route('/items/<category>')
-def items(category):
-	cur = mysql.connection.cursor()
-	query = '''SELECT * FROM Items WHERE category = "{0}"'''.format(category)
+@app.route('/payment')
+def payment():
+	return render_template('payment.html')
 
-	cur.execute(query)
-	l = cur.fetchall()
-	return render_template('items.html', l=l)
+@app.route('/basket')
+def basket():
+	return render_template('basket.html')
 
 @app.route('/logout')
 def logout():

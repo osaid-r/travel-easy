@@ -1,0 +1,123 @@
+{% include 'header.html' %}
+
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 py-4">
+            <h4 class="text-white">About</h4>
+            <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+          </div>
+          <div class="col-sm-4 py-4">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Follow on Twitter</a></li>
+              <li><a href="#" class="text-white">Like on Facebook</a></li>
+              <li><a href="#" class="text-white">Email me</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="navbar navbar-dark bg-dark">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand">SI-SO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div> -->
+
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Shop In Shop Out</h1>
+        <p class="lead text-muted">Immense Possibilities To Discover</p>
+        <p>
+          <a href="#" class="btn btn-primary">State</a>
+          <a href="#" class="btn btn-secondary">Terminal</a>
+        </p>
+      </div>
+    </section>
+
+    <div class="album text-muted">
+      <div class="container">
+
+        <div class="row">
+          <div class="card">
+            <a href="{{ url_for('next') }}">
+            <img src="{{ url_for('static', filename='vistara/Booth-Designer-Builder-Apparel-Clothing-Industry.jpg') }}" alt="Card image cap" style="width:356px;height:280px;">
+            <p class="card-text">Apparel</p> </a>
+          </div>
+
+          <div class="card">
+            <img src="{{ url_for('static', filename='vistara/beauty-and-wellness--cosmetics-10.jpg') }}" alt="Card image cap" style="width:356px;height:280px;>
+            <p class="card-text">Beauty and Welness</p>
+          </div>
+          <div class="card">
+            <img src="{{ url_for('static', filename='vistara/CStore_Web.jpg') }}" alt="Card image cap" style="width:356px;height:280px;>
+            <p class="card-text">Convenience, Travel and News</p>
+          </div>
+
+          <div class="card">
+            <img src="{{ url_for('static', filename='vistara/images_stores_queens_queensROTATORapple560.jpg') }}" alt="Card image cap" style="width:356px;height:280px;>
+            <p class="card-text">Electronics</p>
+          </div>
+          <div class="card">
+            <img src=".{{ url_for('static', filename='vistara/fukuoka_duty-free-shop1.jpg') }}" alt="Card image cap" style="width:356px;height:280px;>
+            <p class="card-text">Duty-Free Shop</p>
+          </div>
+          <div class="card">
+            <img src="{{ url_for('static', filename='vistara/FASH.jpg') }}" alt="Card image cap" style="width:356px;height:280px;>
+            <p class="card-text">Fashion and Accessories</p>
+          </div>
+
+          <div class="card">
+            <img src="{{ url_for('static', filename='vistara/download.jpg') }}" alt="Card image cap" style="width:356px;height:280px;>
+            <p class="card-text">Jwellery and Gifting</p>
+          </div>
+          <div class="card">
+            <img src="{{ url_for('static', filename='vistara/shutterstock_331807202.jpg')}}" alt="Card image cap" style="width:356px;height:280px;>
+            <p class="card-text">Packed Food and Confectionery</p>
+          </div>
+          <div class="card">
+            <img src="{{ url_for('static', filename='vistara/5875849321_57cb466863_b.jpg') }}" alt="Card image cap" style="width:356px;height:280px;>
+            <p class="card-text">Pens and Watches</p>
+          </div>
+          <div class="card">
+            <img src="{{ url_for('static', filename='vistara/perfumes 1.jpg') }}" alt="Card image cap" style="width:356px;height:280px;>
+            <p class="card-text">Perfumes and Cosmetics</p>
+          </div>
+          <div class="card">
+            <img src="{{ url_for('static', filename='vistara/london-souvenirs-gifts.jpg') }}" alt="Card image cap" style="width:356px;height:280px;>
+            <p class="card-text">Souvenir and Gifts</p>
+          </div>
+          <div class="card">
+            <img src="{{ url_for('static', filename='vistara/presents-main.jpg') }}" alt="Card image cap" style="width:356px;height:280px;>
+            <p class="card-text">Toys</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p></p>
+        <p></a>.</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><//script>')</script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../../../assets/js/vendor/holder.min.js"></script>
+    <script>
+      $(function () {
+        Holder.addTheme("thumb", { background: "#55595c", foreground: "#eceeef", text: "Thumbnail" });
+      });
+    </script>
+    <script src="../../../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>
